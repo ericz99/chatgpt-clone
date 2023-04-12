@@ -12,7 +12,7 @@ Simply add your API Key to start using it!
 
 - Simple initutive UI
 - ChatGPT Model
-- Local API Key (stored only on local browser)
+- Local API Key (stored only on local state memory)
 
 ## Deployment
 
