@@ -6,11 +6,12 @@ import MessageSystem from "./MessageSystem";
 
 type ChatConversationProps = {
   streaming: boolean;
+  error: string | null;
 };
 
 const ChatConversation = forwardRef(function ChatConversation(
-  { streaming }: ChatConversationProps,
-  ref: Ref<HTMLParagraphElement> | undefined
+  { streaming, error }: ChatConversationProps,
+  ref?: Ref<HTMLParagraphElement> | undefined
 ) {
   const $scrollToBottomRef = useRef<HTMLDivElement>(null);
   const { chatHistory } = useMessageState((state) => state);
@@ -41,6 +42,7 @@ const ChatConversation = forwardRef(function ChatConversation(
           })}
 
         {streaming && <MessageSystem ref={ref} content="" role="" />}
+        {error && <p>{error}</p>}
       </div>
 
       <div ref={$scrollToBottomRef} />
