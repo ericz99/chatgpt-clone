@@ -50,7 +50,7 @@ export default function Home() {
                   title="ApiKey"
                   aria-label="ApiKey"
                   placeholder="sk-xxxxxxxxxxxxxxxxxxxx"
-                  className="w-full rounded-md py-2 px-4 border-solid border-2 border-black mb-4"
+                  className="w-full text-black rounded-md py-2 px-4 border-solid border-2 border-black mb-4"
                   onChange={onChange}
                 />
 

@@ -19,7 +19,7 @@ export default function MessageBox({
       <div className="relative w-full">
         <textarea
           style={{ height: "96px", maxHeight: "200px" }}
-          className="rounded-lg w-full p-4 border-solid border-2 border-indigo-600 shadow-lg shadow-indigo-500/50 resize-none"
+          className="text-black rounded-lg w-full p-4 border-solid border-2 border-indigo-600 shadow-lg shadow-indigo-500/50 resize-none"
           onChange={onChange}
           onKeyDown={onKeyDown}
           value={value}
